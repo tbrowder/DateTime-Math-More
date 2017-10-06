@@ -2,14 +2,18 @@
 
 Provides some additional DateTime math functions:
 
-  day-of-month-position(
-     UInt :$pos!,             # integer, e.g., 1 for the first weekday W in the month
-     Str :$weekday!,          # first two letters of the day of the week of interest
-                              #   (case insensitive)
-     UInt :$year = Date.year, # starting year of interest (yyyy)
-     :$mon  = Date.month,     # starting month of interest (first three letters or number 1..12)
-                              #   (case insensitive)
-     UInt :$num = 12,         # number of dates to list
-     --> List)                # returns list of dates
+  nth-weekday-of-month(
+     UInt :$nth!,              # integer, e.g., 1 for the first weekday W in the month
+     Str :$weekday!,           # first two letters of the day of the week of interest
+                               #   (case insensitive)
+     :$year = Date.today.year, # starting year of interest (yyyy)
+     :$mon = Date.today.month, # starting month of interest (first three letters or 
+                               #   number 1..12; case insensitive)
+     UInt :$num = 12,          # number of dates to list
+     --> List)                 # returns list of Date objects
 
-
+  nth-weekday-before-date(
+     UInt :$nth!,              # integer, e.g., 1 for the first weekday W before a date
+     Str :$weekday!,           # first two letters of the day of the week of interest
+     Date :$date!              #   (case insensitive)
+     --> Date)

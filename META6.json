@@ -5,10 +5,9 @@
     "description" : "Provides some additional DateTime Math functions",
     "authors"     : [ "github:tbrowder" ],
     "license"     : "Artistic-2.0",
-    "source-url"  : "https://github.com/tbrowder/DateTime-Math-More-Perl6",
+    "source-url"  : "https://github.com/tbrowder/DateTime-Math-More-Perl6.git",
     "support"     : {
-        "bugtracker" : "https://github.com/tbrowder/DateTime-Math-More-Perl6/issues",
-        "source"     : "https://github.com/tbrowder/DateTime-Math-More-Perl6"
+        "bugtracker" : "https://github.com/tbrowder/DateTime-Math-More-Perl6/issues"
     },
     "provides"    : {
         "DateTime::Math::More" : "lib/DateTime/Math/More.pm6"

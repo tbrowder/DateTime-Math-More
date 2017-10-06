@@ -3,7 +3,6 @@ use Test;
 
 use DateTime::Math::More :ALL;
 
-=begin pod
 plan 1;
 
-=end pod
+use-ok 'DateTime::Math::More';
